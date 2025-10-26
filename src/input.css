@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family: "Inter", sans-serif;
+  --font-second-family: "Space Grotesk", sans-serif;
+  --font-third-family: "Roboto", sans-serif;
+}
