@@ -123,3 +123,49 @@ salomlashish("Ali", 15);
 //   console.log("Siz serialchi zvezda ekansiz")
 // }
 // console.log(seriesDB);
+
+
+// Function decloration: Funksiya ishga tushishidan oldin chaqiradi,
+// va uni yuqorisida ham ishlash huquqini beradi
+// function showHelloWorld() {
+//   console.log("Hello World")
+// }
+// showHelloWorld()
+
+const age = 12 // global o'zgaruvchi
+function showHelloWorld2(name) {
+  const age = 18 // local o'zgaruvchi
+  console.log(`Hello ${name}! He is ${age} years old`)
+}
+showHelloWorld2("Azamat")
+
+// function calculate(a, b) {
+//   console.log(a + b)
+// }
+// calculate(1, 2)
+
+function calculate(a, b) {
+  return a + b //return o'zgaruvchini ichiga yaratib beradi
+}
+const firstCalc = calculate(1, 8)
+console.log(firstCalc)
+
+
+// Function Expression: kod ketma ketligi kelganda function yaratiladi,
+// va faqat undan keyin ishlatish mumkin
+const showHelloWorld = function () {
+  console.log("Hello World")
+}
+showHelloWorld()
+
+const calculate2 = function (a, b) {
+  return a + b
+}
+console.log(calculate2(1, 2))
+
+
+//Arrow Function: Kontext This mavjud emas
+const calculate3 = () => {
+  console.log("Calculate")
+}
+calculate3()
